@@ -8,6 +8,7 @@ public class AssignmentOperatorsDemo {
         j = 10; // j gets the value 10.
         j = 5; // j gets the value 5. The previous value is overwritten.
         k = j; // k gets the value 5.
+
         System.out.println("j is : " + j);
         System.out.println("k is : " + k);
 
@@ -33,11 +34,13 @@ public class AssignmentOperatorsDemo {
         System.out.println("Prefix ++ operator resulted in " + x);
         x = -y;
         System.out.println("Unary operator resulted in " + x);
+
         // Some examples of special Cases
         int tooBig = Integer.MAX_VALUE + 1; // -2147483648 which is
         // Integer.MIN_VALUE.
         int tooSmall = Integer.MIN_VALUE - 1; // 2147483647 which is
         // Integer.MAX_VALUE.
+
         System.out.println("tooBig becomes " + tooBig);
         System.out.println("tooSmall becomes " + tooSmall);
         System.out.println(4.0 / 0.0); // Prints: Infinity
