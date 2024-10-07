@@ -1,6 +1,6 @@
 package Homework.M303_2;
 
-public class AssignmentOperatorsDemo {
+public class GLAB_303_2_1_JavaOperators {
 
     public static void main(String args[]) {
         //   Assigning Primitive Values
@@ -12,7 +12,7 @@ public class AssignmentOperatorsDemo {
         System.out.println("j is : " + j);
         System.out.println("k is : " + k);
 
-        //              Multiple Assignments
+        // Multiple Assignments
         k = j = 10; // (k = (j = 10))
         System.out.println("j is : " + j);
         System.out.println("k is : " + k);
@@ -55,6 +55,66 @@ public class AssignmentOperatorsDemo {
 
         System.out.println("d1 is " + d1);
         System.out.println("d2 is " + d2);
+
+        //Relational Operators demo
+
+        int a = 10, b = 5;
+        System.out.println("a > b : "+  (a > b));
+        System.out.println("a <= b : "+ (a <= b));
+        System.out.println("a == b : "+ (a == b));
+        System.out.println("a != b : "+ (a != b));
+
+        int variable1 = 50, variable2 = 100, variable3 = 50;
+        System.out.println("variable1 = " + variable1);
+        System.out.println("variable2 = " + variable2);
+        System.out.println("variable3 = " + variable3);
+        System.out.println("variable1 == variable2: "
+                + (variable1 == variable2));
+
+        System.out.println("variable1 == variable3: "
+                + (variable1 == variable3));
+
+        //Logical Operators Demo
+
+        boolean m = true;
+        boolean n = false;
+        System.out.println("m & n : " + (m & n));
+        System.out.println("m && n : " + (m && n));
+        System.out.println("m | n : " + (m | n));
+        System.out.println("m || n: " + (m || n));
+        System.out.println("m ^ n : " + (m ^ n));
+        System.out.println("!m : " + (!m));
+
+        //Ternary operator demo
+
+        int age = 18;
+        String result = age < 100 ?
+                "Less than 100" : "Greater than 100";
+        System.out.println(result); //Less than 100
+
+        //Unary operator demo
+
+        int sum = +1;
+        // sum is now 1
+        System.out.println(sum);
+
+        sum--;
+        // sum is now 0
+        System.out.println(sum);
+
+        sum++;
+        // sum is now 1
+        System.out.println(sum);
+
+        sum = -sum;
+        // sum is now -1
+        System.out.println(sum);
+
+        boolean result1 = false;
+        // false
+        System.out.println(result1);
+        // true
+        System.out.println(!result1);
 
 
     }
