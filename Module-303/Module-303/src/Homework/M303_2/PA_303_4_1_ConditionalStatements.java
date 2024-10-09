@@ -86,7 +86,7 @@ public class PA_303_4_1_ConditionalStatements {
                 System.out.println("Saturday");
                 break;
             default:
-                      System.out.println("Out of range");
+                System.out.println("Out of range");
         }
 
 

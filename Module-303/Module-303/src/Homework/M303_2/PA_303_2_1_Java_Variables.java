@@ -77,6 +77,7 @@ public class PA_303_2_1_Java_Variables {
         System.out.println("Total sale = " + totalSale);
 
 
+
     }
 
 }
