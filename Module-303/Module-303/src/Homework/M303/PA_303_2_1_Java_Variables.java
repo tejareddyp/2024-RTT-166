@@ -1,4 +1,4 @@
-package Homework.M303_2;
+package Homework.M303;
 
 public class PA_303_2_1_Java_Variables {
     //Practice Assignment
@@ -74,7 +74,7 @@ public class PA_303_2_1_Java_Variables {
         subTotal = (3 * coffee) + (4 * tea) + (2 * latte);
         totalSale = subTotal * SALES_TAX;
 
-        System.out.println("Total sale = " + totalSale);
+        System.out.println("Total sale = " + (String.format("%.2f", totalSale)) );
 
 
 
