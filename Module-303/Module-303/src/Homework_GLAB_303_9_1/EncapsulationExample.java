@@ -1,5 +1,7 @@
 package Homework_M303_9;
 
+import Homework_GLAB_303_9_1.HumanBeing;
+
 public class EncapsulationExample {
 
 
