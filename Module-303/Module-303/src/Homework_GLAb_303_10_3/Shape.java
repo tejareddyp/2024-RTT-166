@@ -1,7 +1,7 @@
 package Homework_GLAb_303_10_3;
 
 
-    public abstract class Shapes {
+    public abstract class Shape {
         protected String color;
         protected double height;
         protected double width;
@@ -24,7 +24,7 @@ package Homework_GLAb_303_10_3;
 
 // The getArea method is abstract.
         // It must be overridden in a subclass.
-        /** All shapes must provide a method called getArea() */.
+        /** All shapes must provide a method called getArea() */
         public abstract double getArea();
 
         /** Returns a self-descriptive string */

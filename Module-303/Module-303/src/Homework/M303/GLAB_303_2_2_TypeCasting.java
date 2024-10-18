@@ -1,4 +1,4 @@
-package Homework.M303_2;
+package Homework.M303;
 
 public class GLAB_303_2_2_TypeCasting {
 

@@ -1,4 +1,4 @@
-package Homework.M303_2;
+package Homework.M303;
 
 public class PA_303_2_3 {
 

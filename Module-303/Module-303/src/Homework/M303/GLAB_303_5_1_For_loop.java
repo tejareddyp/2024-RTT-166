@@ -1,4 +1,4 @@
-package Homework.M303_2;
+package Homework.M303;
 import java.util.Scanner;
 
 public class GLAB_303_5_1_For_loop {

@@ -1,4 +1,4 @@
-package Homework.M303_2;
+package Homework.M303;
 
 import java.util.Arrays;
 public class GLAB_303_3_1_StringMethods {

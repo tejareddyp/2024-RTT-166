@@ -3,7 +3,7 @@ package homework_303_11_2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CreateArrayListFromCollectionExample {
+public class CreateArrayListFromCollectionExample1 {
 
     public static void main(String[] args) {
 

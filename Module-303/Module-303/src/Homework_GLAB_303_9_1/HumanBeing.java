@@ -1,4 +1,4 @@
-package Homework_M303_9;
+package Homework_GLAB_303_9_1;
 
 public class HumanBeing {
 
