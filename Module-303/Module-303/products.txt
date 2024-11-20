@@ -1,0 +1,3 @@
+Hot Chocolate,5.99
+Chai Latte,4.59
+Cappuccino,6.99
