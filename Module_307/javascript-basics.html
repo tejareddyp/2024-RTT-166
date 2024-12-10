@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //use var only if it is needed globally
+
+        //var is a global variable accessable by any function
+        var a = 10;
+        var b = "String";
+        var c = true;
+
+        function abc() {
+            //let scopes this variable to the containing()
+            let x = 10;
+            var y = 20;
+            console.log(y);
+        }
+        //x is not available here
+        
+        console.log("Hello world!");
+        abc();
+
+        const person = {
+            firstName: "John",
+            lastName: "doe",
+            age: 40
+
+        };
+
+        console.log(person.firstName);
+        console.log(person["firstName"]);
+
+        person.height = "60";
+
+        console.log(person.height);
+        console.log(person["height"]);
+
+        let arr = [];
+        arr[1] = null;
+        arr[5] = 34;
+        arr[10] = 1234;
+        console.log(arr);
+        
+    </script>
+    <h1>Javascript Basics</h1>
+</body>
+</html>

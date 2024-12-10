@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-Properties</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/pub/css/external.css";>
+</head>
+<body>
+    <!--this is internal styling-->
+    <style>
+        p, span {
+            color:red;
+            background-color: #08070083;
+            font-size:20px;
+            font-weight: 500;
+            border-radius: 10px;
+        }
+
+        .pseudo {
+            background-color: red;
+        }
+
+        .pseudo:hover {
+            background-color: yellow;
+        }
+
+        .pseudo:active {
+            background-color: aqua;
+        } 
+
+
+       
+
+        #anything {
+            background-color: greenyellow;
+        }
+    </style>
+    <p style="font-family: Roboto, sans-serif;">This has some text with different font</p>
+    <p style="color:black">This is a paragraph</p></br>
+    <!--Inline styling is when we use style attribute in html tag itself-->
+    <span>This ia a span</span></br></br>
+    <div class="customClass">This is p4</div>
+    <div class="customClass">This is p5</div>
+    <div id="anything">This is p6</div>
+    <div class="defined-external">This is defined in external css</div>
+    <div class="pseudo" >Hover over me to change color</div>
+</body>
+</html>

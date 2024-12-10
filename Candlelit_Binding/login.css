@@ -1,0 +1,37 @@
+.oldenburg-regular {
+    font-family: "Oldenburg", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #fcf4d9;
+}
+
+#form {
+    border: 1px;
+    border-style: solid;
+    padding: 1rem;
+    width: 40rem;
+    max-width: 80%;
+
+    font-family: "Oldenburg", serif;
+}
+
+#forgotPassword {
+    padding: 0rem;
+    background-color: #fcf4d9;
+    color: #672a3f;
+    border: 0px;
+    font-size: small;
+
+}
+
+#mainDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    margin-bottom: 2rem;
+}

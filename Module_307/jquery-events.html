@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Form Validation with JQuery</h1>
+
+    <button id="b1">Button 1</button>
+    <button id="b2">Button 2</button>
+</body>
+
+<script>
+    $("#b1").click(function() {
+        console.log("The button 1 was clicked");
+    });
+    $("#b1").click(function() {
+        console.log("Click event through alternate syntax");
+        
+    });
+    $("#b2").click(function() {
+        console.log("The button 2 was clicked");
+    });
+
+    $("#b1").on('mouseenter',function() {
+        console.log("mouse is over b1");
+        $("#b1").css("background-color", "yellow");
+    })
+
+    $("#b1").on('mouseout',function() {
+        console.log("mouse has exited b1");
+    })
+    
+</script>
+</html>

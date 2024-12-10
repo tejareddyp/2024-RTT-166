@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigate</title>
+</head>
+<body>
+    <style>
+        .navbar {
+            position: sticky;
+            top: 0;
+            right: 0;
+            padding: 5px 5px;
+            background-color: blue;
+            display: flex;
+            gap: 10px;
+            font-family: Arial, sans-serif;
+           
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 1px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+        }
+
+        .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropbtn {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 4px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 10px 15px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #575757;
+    }
+</style>
+
+<div class="navbar">
+    <a href="candlelit-binding.html">Candlelit Binding</a>
+    <a href="About.html">About</a>
+    <a href="Login.html">Login</a>
+    <div class="dropdown">
+        <button class="dropbtn">Shop</button>
+        <div class="dropdown-content">
+            <a href="#">Books</a>
+            <a href="#">Binders</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Cart</button>
+        <div class="dropdown-content">
+            <a href="#">View Cart</a>
+            <a href="#">Checkout</a>
+        </div>
+    </div>
+    <a href="Contact-Us.html">Contact</a>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <link href="about.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Oldenburg&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <div>
+        <div id="navbar"></div>
+
+        <script>
+            fetch("navbar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navbar").innerHTML = data;
+                });
+        </script>
+
+        <h1>Welcome to Candlelit Binding!</h1>
+        <p style="color: #672a3f;">
+            We specialize in making one-of-a-kind books and binders that last a lifetime.
+            Whether you are in search of a travel diary or a Spiderman themed book, we have it all.
+            On the off chance that you cannot find exactly what you are looking for, please feel free to contact us
+            under the “Contact” tab and we will work to make your vision possible.
+
+        </p>
+    </div>
+</body>
+
+</html>

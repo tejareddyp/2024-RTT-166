@@ -1,0 +1,33 @@
+.oldenburg-regular {
+    font-family: "Oldenburg", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+    background-color: #fcf4d9;
+
+}
+
+h1 {
+    color: #672a3f;
+    margin-top: 50px;
+    font-family: "Oldenburg", serif;
+    font-size: large;
+    text-align: center;
+
+}
+
+#navbar {
+    padding: 0rem;
+    margin: 0rem;
+    border: 0rem;
+}
+
+p {
+    margin-top: 25px;
+    margin-left: 75px;
+    margin-right: 75px;
+    font-family: "Oldenburg", serif;
+}

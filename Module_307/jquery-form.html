@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <script>
+
+        function submitFunction(event) {
+            event.preventDefault();
+
+            console.log("submit clicked");
+            console.log(event);
+        
+
+        let fn = $("#firstname").val();
+        if (fn == "") {
+            console.log("First name is required");
+            $("#fnerror").text("First name is required");
+            $("#fns").css("color", "red");
+
+        }
+        else {
+            console.log("First name entered");
+            
+        }
+
+        let ln = $("#lastname").val();
+        if ( ln == "") {
+            $("#lnerror").text("Last name is required");
+            $("#lastname").css("background-color", "red");
+        }
+    }
+    </script>
+
+    <h1>Jquery Form Validation</h1>
+     <form onsubmit="submitFunction(event)">
+        First Name  <span id="fns">*</span> <input type="text" id="firstname" name="firstname" style="margin-left:10px;">
+        <div id="fnerror"></div>
+        <br/>
+        Last Name<span id="lns">*</span><input type="text" id="lastname" name="lastName" style="margin-left:20px;"><br/></br>
+        <div id="lnerror"></div>
+        Email<span id="emails">*</span><input type="email" name="email" id="email" style="margin-left:50px;"></br></br>
+        <select>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+        </select></br></br>
+        <input type="checkbox" style="margin-right: 10px;">I agree</br></br>
+        <button type="submit">Submit</button>
+     </form>
+
+     <script>
+        $('form').on('submit'), function(){
+
+        }
+        $("#firstname").on('focus', function() {
+        
+            console.log("firstname has focus");
+        })
+        $("#firstname").on('blur', function() {
+            console.log("firstname has blur");
+        })
+
+        
+     </script>
+    
+</body>
+
+</html>

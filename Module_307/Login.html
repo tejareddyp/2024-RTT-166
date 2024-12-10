@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>   
+    <div id="navbar"></div>
+<script>
+    fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+</script>
+
+    <style>
+        
+        table {
+            align-items: center;
+            
+            width: 30%;
+            text-align: center;
+            border: 1px solid #333;
+            
+        }
+         table td {
+            border: 1px solid #333;
+            padding: 10px;
+        }
+    </style>
+    <table align="center">
+        <form>
+            <tr>
+                <td align="center" colspan="2" style="background-color: burlywood;" >Sign In</td>
+            </tr>
+            <tr>
+                <td id="email">E-mail Address</td>
+                <td>
+
+                    <input type="text" name="text">
+                </td>
+
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+
+                    <input type="text" name="password">
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <button>Sign In</button>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <button>Create Account</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+
+    
+</body>
+
+</html>

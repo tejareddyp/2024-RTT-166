@@ -1,0 +1,22 @@
+#form {
+    justify-content: center;
+    padding: 1rem;
+    width: 30rem;
+    max-width: 90%;
+    font-family: "Oldenburg", serif;
+}
+
+#mainDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.oldenburg-regular {
+    font-family: "Oldenburg", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#navbar {
+    margin-bottom: 2rem;
+}

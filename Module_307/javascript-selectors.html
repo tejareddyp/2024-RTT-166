@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">This is the header</h1>
+    <p id="para">This is a paragraph</p>
+    First name
+    <input id="firstName1" name="firstname" type="text">
+    <input id="firstName2" name="firstname" type="text">
+</body>
+<script>
+    let h = document.getElementById("header");
+    console.log(h);
+
+    let p = document.getElementById("para");
+    console.log(p);
+    console.log(p.innerText);
+    p.innerText = "New text assigned by javascript";
+
+    let i = document.getElementsByName("firstname");
+    console.log(i);
+</script>
+</html>

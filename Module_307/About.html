@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>About</title>
+</head>
+<body>
+    <div id="navbar"></div>
+
+<script>
+    fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+</script>
+    <h1 style="font-family: 'Trebuchet MS', sans-serif; color: blue;">Welcome to Candlelit Binding!</h1>
+</br></br>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </br>
+    Adipisci eaque veniam perferendis enim hic consequuntur cupiditate aliquid, cum, tempore dolorum at repudiandae quidem molestiae optio deserunt ducimus saepe, labore sed.
+
+
+</p>
+    
+</body>
+</html>
