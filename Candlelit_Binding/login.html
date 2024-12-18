@@ -14,7 +14,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    <script href="login.js"></script>
+
     <link href="login.css" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,14 +32,6 @@
 
         <div id="navbar"></div>
 
-        <script>
-            fetch("navbar.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("navbar").innerHTML = data;
-                });
-        </script>
-
 
 
 
@@ -44,43 +39,45 @@
             <form class="was-validated">
 
                 <div class="mb-3 ">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+                    <h6 id="form-header">Sign in or create your account </h6>
                 </div>
 
-
+                <div class="mb-3 ">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+                    <p id="result"></p>
+                </div>
                 <div class="mb-0 ">
                     <label for="password" class="form-label">Password</label>
                     <input type="password" class="form-control" id="password" placeholder="" required>
                 </div>
-
-
                 <div class="mb-3 ">
                     <button type="submit" id="forgotPassword" class="btn btn-primary">Forgot
                         Password</button>
-
                 </div>
-
                 <div class="mb-3 ">
+                    <p id="errorMessage"></p>
                     <button type="submit" class="btn btn-primary" style="background-color: #672a3f; ">Submit</button>
                 </div>
-
-
                 <div class="mb-3 ">
                     <p>New to Candlelit Binding?</p>
                 </div>
-
-
                 <div class="mb-3 ">
-                    <button type="submit" class="btn btn-primary" style="background-color: #672a3f;">Create
-                        Account</button>
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">Yes</label>
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">No</label><br>
                 </div>
-
-
+                <div class="mb-3 ">
+                    <button id="createAcc" onclick="location.href='createAccount.html'" class="btn btn-primary"
+                        style="background-color: #672a3f;">Create Account</button>
+                </div>
             </form>
         </div>
     </div>
 
+    <script src="navbar.js"></script>
+    <script type="text/javascript" src="login.js"></script>
 
 </body>
 

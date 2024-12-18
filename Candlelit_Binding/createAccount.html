@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Oldenburg&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metamorphous&family=Oldenburg&display=swap" rel="stylesheet">
+
+
+    <style>
+        form {
+            border: 1px;
+            border-style: solid;
+            width: 30rem;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            max-height: 80rem;
+
+        }
+
+        .oldenburg-regular {
+            font-family: "Oldenburg", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        .input-field-container {
+
+            padding: 0px;
+
+            align-self: center;
+
+        }
+
+        body {
+            background-color: #fcf4d9;
+            margin: 0rem;
+        }
+
+        #mainDiv {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h6 {
+            margin: 1rem 0rem;
+            font-family: "Oldenburg", serif;
+            font-size: medium;
+
+
+        }
+
+        #button {
+            font-family: "Oldenburg", serif;
+            color: #fcf4d9;
+            padding: 5px;
+            margin: 2rem;
+
+
+        }
+
+        #form-div {
+            align-self: center;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mainDiv">
+
+        <div id="navbar"></div>
+
+        <script>
+            fetch("navbar.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("navbar").innerHTML = data;
+                });
+
+
+        </script>
+
+        <div id="form-div">
+            <form id="form" class="needs-validation">
+                <h6 style="text-align: center;">Create account</h6>
+                <div class="input-field-container">
+                    <h6>Your name</h6>
+                    <input type="email" name="name">
+                </div>
+                <div class="input-field-container">
+                    <h6>Email</h6>
+                    <input type="email" name="email">
+                </div>
+                <div class="input-field-container">
+                    <h6>Password</h6>
+                    <input type="password" name="password">
+                </div>
+                <div class="input-field-container">
+                    <h6>Re-enter Password</h6>
+                    <input type="password" name="password">
+                </div>
+                <div class="input-field-container">
+
+                    <button type="submit" id="button" class="btn btn-primary" style="background-color: #672a3f;">Create
+                        Account</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

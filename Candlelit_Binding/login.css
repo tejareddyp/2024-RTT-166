@@ -11,11 +11,13 @@ body {
 #form {
     border: 1px;
     border-style: solid;
+    border-color: #672a3f;
     padding: 1rem;
     width: 40rem;
     max-width: 80%;
-
     font-family: "Oldenburg", serif;
+    margin-top: 2rem;
+    padding-top: 0rem;
 }
 
 #forgotPassword {
@@ -32,6 +34,12 @@ body {
     flex-direction: column;
 }
 
-#navbar {
-    margin-bottom: 2rem;
+#form-header {
+    font-family: "Oldenburg", serif;
+    text-align: center;
+    padding: 0.1rem ;
+    background-color: #672a3f;
+    color: #fcf4d9;
+    font-size: large;
 }
+

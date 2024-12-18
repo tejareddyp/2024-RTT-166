@@ -5,6 +5,8 @@
 <head>
     <title>Title</title>
 
+
+
     <!-- these 2 lines are needed to bring in bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -12,15 +14,17 @@
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
 
+    <link href="/pub/css/global.css" rel="stylesheet"/>
 
-    <!-- jquery is always loaded at the top of the file because its needed by so many other libraries -->
+
+    <!-- jquery is always loaded at the top of the file because it's needed by so many other libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 
 </head>
-<body>
+<body style="height: 100%; background-color: #e6f7ff">
 
-<section>
+<section >
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -34,6 +38,12 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/customer/search">Customer Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/customer/create">Create Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/employee/search">Employee Search</a>
                     </li>
                 </ul>
             </div>
